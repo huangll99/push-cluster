@@ -1,0 +1,26 @@
+server:
+  port: 8088
+  tomcat:
+    uri-encoding: UTF-8
+
+push:
+  port: 8888
+
+rabbitmq:
+  host: localhost
+  port: 5672
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/push?characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
